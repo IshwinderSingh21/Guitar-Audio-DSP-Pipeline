@@ -3,6 +3,9 @@
 A discrete-time parallel audio multi-effects pipeline designed in Simulink and compiled into optimized, production-ready C++ code. The system mimics a hardware guitar pedalboard matrix, splitting an incoming guitar instrument signal (via an ADC interface) into four parallel effects units before mixing down the final signal.
 
 ---
+## 🔌 Signal Origin: LTSpice Integration
+Rather than using a generic math function, the input signal for this project represents a real-world analog guitar waveform. A physical analog guitar preamp circuit was simulated in **LTSpice** to capture realistic electrical behavior. This continuous-time voltage trace was then exported and imported directly into the Simulink architecture as the raw test stimulus (`guitar_adc`).
+---
 
 ## 🎸 The Pedalboard Architecture
 
